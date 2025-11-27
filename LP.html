@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Web Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ENCABEZADO -->
+    <nav class="topheader">
+      <a href="#" class="logo">
+        <img width="120" src="img/img.jpg" alt="Logo del sitio" />
+      </a>
+
+      <ul class="Menu-horizontal">
+        <li><a href="#">Productos</a></li>
+        <li>
+          <a href="#">Servicios</a>
+          <ul class="Menu-Vertical">
+            <li><a href="#">Pago servicios</a></li>
+            <li><a href="#">Pago Impuestos</a></li>
+            <li><a href="#">Transferencias</a></li>
+            <li><a href="#">Financieros</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Banca por Internet</a></li>
+        <li><a href="#">Contáctanos</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECCIÓN PRODUCTOS -->
+    <section class="Seccion-Productos">
+      <div class="Div-General-Productos">
+        <div class="Div-Producto-Text">
+          <h2>Contexto del Asma</h2>
+          <p>
+            Un producto es un bien, servicio o idea que se ofrece a un mercado
+            para satisfacer una necesidad o deseo. Puede ser tangible, como un
+            coche o un alimento, o intangible, como una consulta médica o un
+            software. En matemáticas, un producto es el resultado de la
+            multiplicación de dos o más factores.
+          </p>
+        </div>
+
+        <div class="Div-Producto-Img">
+          <img src="img/niñoasma.jpg" alt="Imagen de producto" width="500" />
+        </div>
+      </div>
+    </section>
+
+    <section class="Seccion-Salud">
+      <div class="Div-Gral-Salud">
+        <div class="Div-Salud-Texto">
+          <h2>¿Qué es el asma?</h2>
+          <p>
+            El asma es una enfermedad respiratoria crónica que provoca la
+            inflamación y el estrechamiento de las vías respiratorias,
+            dificultando el paso del aire hacia los pulmones. Esta condición
+            puede afectar a personas de todas las edades, aunque suele comenzar
+            en la infancia. Sus principales síntomas incluyen tos persistente,
+            dificultad para respirar, silbidos en el pecho y sensación de
+            opresión torácica, que pueden variar en intensidad según la persona
+            y las circunstancias.
+          </p>
+        </div>
+      </div>
+
+      <!-- VIDEO SOBRE ASMA -->
+      <div class="Div-Asma-Video">
+        <iframe
+          src="https://www.youtube.com/embed/4R8CdowBQSc"
+          title="Video sobre el asma"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- FORMULARIO PRINCIPAL -->
+    <section class="Seccion-Formulario">
+      <div class="Div-Cont-Formulario">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+
+        <form class="Formulario">
+          <!-- NOMBRE -->
+          <div class="Campo">
+            <label for="Nombre">Nombre Completo:</label>
+            <input
+              type="text"
+              id="Nombre"
+              name="Nombre"
+              placeholder="Ingrese su nombre"
+            />
+          </div>
+
+          <!-- MENÚ DESPLEGABLE -->
+          <div class="Campo">
+            <label for="Pais">País:</label>
+            <select id="Pais" name="Pais">
+              <option value="">Seleccione un país</option>
+              <option value="Peru">Perú</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Argentina">Argentina</option>
+            </select>
+          </div>
+
+          <!-- CHECKBOX INTERESES -->
+          <div class="Campo">
+            <label>Intereses:</label>
+            <ul class="Lista-Checkbox">
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="Educacion" />
+                  Educación</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="Finanzas" />
+                  Finanzas</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="Ingenieria" />
+                  Ingeniería</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="Literatura" />
+                  Literatura</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- RADIO SEXO -->
+          <div class="Campo">
+            <label>Sexo:</label>
+            <ul class="Lista-Radio">
+              <li>
+                <label
+                  ><input type="radio" name="Sexo" value="Masculino" />
+                  Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="Sexo" value="Femenino" />
+                  Femenino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="Sexo"
+                    value="Prefiero no decirlo"
+                  />
+                  Prefiero no decirlo</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- BOTÓN -->
+          <button type="submit" class="button">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo y nombre -->
+        <div class="footer-brand">
+          <img src="img/img.jpg" alt="Logo" class="footer-logo" />
+          <p>ASTHMA CONTROL</p>
+          <small>© 2025 Todos los derechos reservados</small>
+        </div>
+
+        <!-- Enlaces legales -->
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="/Documentos/3.politica-privacidad.pdf"
+            >Política de Privacidad</a
+          >
+          <a href="#">Términos y Condiciones</a>
+          <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+              alt="Facebook"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+              alt="Instagram"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="LinkedIn"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+              alt="Twitter"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

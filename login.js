@@ -1,7 +1,7 @@
 function validarLogin(event) {
   event.preventDefault();
 
-  const CLAVE_SECRETA = "22062007";
+  const CLAVE_SECRETA = "ok";
   const passwordInput = document.getElementById("password").value;
 
   if (passwordInput.toLowerCase() === CLAVE_SECRETA) {

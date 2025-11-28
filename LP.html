@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Web Site</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
   </head>
 
   <body>
     <!-- ENCABEZADO -->
     <nav class="topheader">
       <a href="#" class="logo">
-        <img width="120" src="img/img.jpg" alt="Logo del sitio" />
+        <img width="80px" src="img/img.jpg" alt="Logo del sitio" />
       </a>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!-- Ícono de hamburguesa -->  
+      </button>
 
       <ul class="Menu-horizontal">
         <li><a href="#">Productos</a></li>
@@ -34,13 +41,15 @@
     <section class="Seccion-Productos">
       <div class="Div-General-Productos">
         <div class="Div-Producto-Text">
-          <h2>Contexto del Asma</h2>
+          <h2>¿Qué es el asma?</h2>
           <p>
-            Un producto es un bien, servicio o idea que se ofrece a un mercado
-            para satisfacer una necesidad o deseo. Puede ser tangible, como un
-            coche o un alimento, o intangible, como una consulta médica o un
-            software. En matemáticas, un producto es el resultado de la
-            multiplicación de dos o más factores.
+            El asma es una enfermedad crónica que afecta a las vías
+            respiratorias y provoca episodios recurrentes de dificultad para
+            respirar. Estos episodios ocurren debido a una inflamación
+            persistente de los bronquios, que se estrechan y producen un exceso
+            de mucosidad, dificultando el paso del aire. Aunque puede
+            presentarse a cualquier edad, el asma es una de las afecciones
+            respiratorias más comunes en niños, adolescentes y adultos jóvenes.
           </p>
         </div>
 
@@ -53,16 +62,18 @@
     <section class="Seccion-Salud">
       <div class="Div-Gral-Salud">
         <div class="Div-Salud-Texto">
-          <h2>¿Qué es el asma?</h2>
+          <h2>¿Qué síntomas presenta el asma?</h2>
           <p>
-            El asma es una enfermedad respiratoria crónica que provoca la
-            inflamación y el estrechamiento de las vías respiratorias,
-            dificultando el paso del aire hacia los pulmones. Esta condición
-            puede afectar a personas de todas las edades, aunque suele comenzar
-            en la infancia. Sus principales síntomas incluyen tos persistente,
-            dificultad para respirar, silbidos en el pecho y sensación de
-            opresión torácica, que pueden variar en intensidad según la persona
-            y las circunstancias.
+            Los síntomas más frecuentes incluyen tos persistente, sensación de
+            opresión en el pecho, respiración entrecortada y silbidos al
+            respirar. Estos pueden variar en intensidad y desencadenarse por
+            factores como alergias, ejercicio, infecciones respiratorias, humo,
+            cambios bruscos de clima o exposición a irritantes ambientales. Si
+            bien el asma no tiene cura, puede controlarse eficazmente con un
+            tratamiento adecuado y un estilo de vida saludable. La educación del
+            paciente, el uso correcto de inhaladores y la identificación de
+            desencadenantes son fundamentales para mejorar la calidad de vida y
+            reducir las crisis.
           </p>
         </div>
       </div>
@@ -224,5 +235,6 @@
         </div>
       </div>
     </footer>
+    <script src="menu_toggle.js"></script>
   </body>
 </html>
